@@ -377,13 +377,10 @@ h2{
         
     }
 
-    .slider{    
+    .section_slider{    
         position: relative;
     }
-    /* .slider-info{
-        text-align: center;
-    } */
-
+   
     .ticher-title{
         margin: 0 auto;
         font-size: 24px;
@@ -480,15 +477,6 @@ h2{
     text-align: center;
     color: #2B292D;
 }
-
-/* .slider-line{ 
-    max-width: 100%;
-    background: white;
-    padding: 30px 30px 24px;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(43, 41, 45, 0.1);
-    margin-bottom: 13px;
-} */
 
 
 
