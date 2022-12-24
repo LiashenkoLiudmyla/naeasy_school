@@ -120,6 +120,15 @@ color: #e31a2b;
 }
 
 
+
+
+
+
+
+
+/* ////////////////price///////////////////////// */
+
+
 .price::before{
     content: ''url(../img/feathers/feaser.png);
     position: absolute;
@@ -133,6 +142,7 @@ color: #e31a2b;
     bottom: 0;
     right: 0;
    max-height: 700px; 
+   z-index: -1;
 }
 
 .img_price{
@@ -141,10 +151,6 @@ color: #e31a2b;
 
 
 
-
-
-
-/* ////////////////price///////////////////////// */
 h2{
     font-size: 35px;
     /* font-family: 'Forum', cursive; */

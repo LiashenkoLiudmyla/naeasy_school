@@ -1,15 +1,4 @@
 
-
-.background_english{
-    max-width: 1440px;
-    text-align: center;
-    padding: 400px;
-    background-image: url(../img/english_page/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    }
-
 .main--flex-german::before{
     content: ''url(../img/feathers/feaser.png);
     position: absolute;
