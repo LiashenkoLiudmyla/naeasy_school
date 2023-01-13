@@ -1,4 +1,4 @@
-$('.slider').bxSlider({
+const slider = $('.slider-list').bxSlider({
     mode: 'fade',
     controls:false,
     //auto: true,
@@ -17,5 +17,7 @@ $(".bx-next").click ((e) => {
     e.preventDefault();
     slider.goToNextSlide();
 });
+
+
 
 

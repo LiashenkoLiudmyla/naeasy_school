@@ -42,19 +42,24 @@ body{
 .naseasy-logo{
     max-width: 95px;
 }
-.main--flex::before{
-    content: ''url(../img/feathers/feaser.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;   
+
+.main{
+    
+    max-width: 1440px;
+    margin: 0 auto; 
+    
 }
-.main--flex::after{
-    content: ''url(../img/feathers/feasers.png);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-height: 700px; 
+
+h1{
+    font-family: 'Forum', cursive;
+    color: #012964;
+    font-weight: 500px;
+}
+.main--flex{
+    position: relative;
+    display: inline-block;
+    font-size: 48px;
+    line-height: 58px;
 }
 
 .container{
@@ -79,7 +84,7 @@ body{
     margin-right: 28px; 
 }
 .header_link--active{
-color: red;
+color: #e31a2b;
 }
 .header_link:hover{
     font-weight: bold;
@@ -96,16 +101,17 @@ color: red;
     transition: 1s;
 }
 .button{
+    position: relative;
     border: none;
     border-radius: 45px;
     background-color: rgb(164 189 215);
     color: #FFFFFF;
-}
-.button_1{
     width: 143px;
     height: 34px;
     margin: 20px 0;
+    z-index: 10;
 }
+
 .button:hover{
     cursor: pointer;
     transition: 300ms;
@@ -114,130 +120,92 @@ color: red;
 }
 
 
-/* section main */
 
 
-.main{
-    
-    max-width: 1440px;
-    margin: 0 auto; 
-    
-}
 
-h1{
-    font-family: 'Forum', cursive;
-    color: #012964;
-    font-weight: 500px;
-}
-.main--flex{
-    position: relative;
-    display: inline-block;
-    font-size: 48px;
-    line-height: 58px;
-}
-.main-info{
- position: absolute;
-    margin: 0 auto;
+
+
+
+/* ////////////////price///////////////////////// */
+
+
+.price::before{
+    content: ''url(../img/feathers/feaser.png);
+    position: absolute;
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 22%; /* Регулируем это значение, чтобы перемещать позиционированный div вверх и вниз */
-    text-align: center;
-    width: 30%; /* Устанавливаем ширину позиционируемого div */
+    z-index: 0;   
 }
-
-
-/* SECTION PRODUCTS*/
-
-.language-section{
-    position: relative;
-}
-
-.card-flex-column{
-    padding-bottom: 70px;
-}
-
-.card-flex-column::before{
-    content: ''url(../img/langvigue/backgraund_befor.png);
+.price::after{
+    content: ''url(../img/feathers/feasers.png);
     position: absolute;
     bottom: 0;
-    left: 80px;  
-    z-index: 4; 
+    right: 0;
+   max-height: 700px; 
+   z-index: -1;
 }
+
+.img_price{
+    opacity: .5;
+}
+
+
+
 h2{
     font-size: 35px;
     /* font-family: 'Forum', cursive; */
     color: #012964;
     font-weight: bold;
-    /* text-transform: uppercase; */
+    margin-bottom: 25px;
+    
 }
-.products-flex-column::before{
-    content: ''url(../img/feathers/feaser.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-   
-}
-.products-flex-column::after{
-    content: ''url(../img/feathers/feasers.png);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.products{
-    background: #FAFAFC;
+.price{
+    /* background: #FAFAFC; */
     position: relative;
     padding: 45px 0;
 }  
-.prodacts_info{
+.price_info{
     flex-direction: column;
-    text-align: center;
     margin: 0 auto;
 } 
-.grid_section-products{
+.price-span-title{
+    
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 24px;
+    color:rgb(9, 9, 9);
+    padding-bottom: 10px;
+}
+.grid_price-text{ 
+    justify-content: start;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(90, 90, 91);
+    max-width: 287px;
+    text-align: left;
+    padding: 9px 50px 60px 50px;
+} 
+.price-span{
+    font-weight: bold;
+}
+.grid_section-price{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px; 
     z-index: 1;
 }
-.products-img{
-    padding: 50px 0 10px;
-}
-.grid_products-title{
-    
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 24px;
-    text-align: center;
-    color:rgb(9, 9, 9);
-    padding-bottom: 10px;
-}
-.grid_products-text{ 
-    
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: rgb(171, 171, 172);
-    max-width: 287px;
-    text-align: center;
-    padding: 9px 50px 60px 50px;
-} 
-.products-img:hover{
-   transform: rotateY(180deg); 
-   transition: 1s all;
-   cursor: pointer;
-   
-}
-.section-products--hover, .products-flex-column{
+.section-price--hover, .price-flex-column{
     flex-direction: column;
-    text-align: center;
+    
     margin: 0 auto;
+    text-align: left;
 }
-.text--about{
-    color: rgb(164 189 215);
-}
+
+/* ////////////////price end///////////////////////// */
+
+
 
 /*модальне вікно*/
 
@@ -302,157 +270,6 @@ h2{
    }
 
  
-/*SECTION LANGUAGE*/
-
-    
-.title-language{
-        text-align: center;
-        margin: 25px 0;
-    }
-.card-flex-column,.card_info{
-    flex-direction: column;
-    text-align: center;
-}
-.text-card-section{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #575445;
-    max-width: 538px;
-}
-.grid_section-card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);   
-    gap: 20px; 
-    text-align: center;
-    padding: 21px;
-}
-
-
-/* Card styles */
-
-.card{
-    width: 368px;
-    height: 481px;
-    perspective: 1200px;
-}
-.card__inner{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.card:hover .card__inner {
-    transform: rotateY(180deg);
-}
-.card__front, .card__back {
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; 
-}
-.card__back{
-    transform: rotateY(180deg);
-}
-
-
-       /* section carusel */
-
-    .title-reviews{
-        opacity: .8;
-        font-size: 24px;
-        text-align: center;
-        
-    }
-
-    .section_slider{    
-        position: relative;
-    }
-   
-.bx-prev, .bx-next{
-    color: #182e63;
-    text-align: right;
-    text-decoration: none;
-    position: absolute;
-}
-
-.bx-prev{
-    bottom: -30px;
-    left: 450px;
-}
-
-.bx-next{
-    bottom: -30px;
-    right: 450px;
-}
-    
-    
-
-
-
-/* section slider */
-
-
-
-.reviews, .slider{    
-    position: relative;
- 
-}
-.slider-info{
-    text-align: center;
-}
-.title-reviews{
-    
-    margin: 25px ;
-}
-.slider-img{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    padding-right: 25px;      
-}
-.slider-title{
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    padding: 28px 0;
-}
-.slider_foto{
-    display: inline;
-    margin: 0 auto;
-    padding-bottom: 10px;
-}
-.slider-text{
-    margin: 0 auto;
-    max-width: 750px;
-    font-size: 15px;
-    line-height: 19px;
-    text-align: center;    
-    color: #2B292D;
-    padding-bottom: 34px;
-}
-.slider-pers{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #2B292D;
-}
-
-.bx-prev{
-    
-}
-
-
-
-
-
 
 
 
@@ -655,8 +472,10 @@ input{
 box-shadow: 0px 6px 13.2px 1.8px rgba(0, 0, 0, 0.06);
         padding: 40px 10px;
         margin-bottom: 15px;
-        width: 242px;   
+        width: 242px;
+        
     }
+
     .container_social{
         position: relative;
     }

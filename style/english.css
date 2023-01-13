@@ -1,16 +1,5 @@
 
-
-.background_english{
-    max-width: 1440px;
-    text-align: center;
-    padding: 400px;
-    background-image: url(../img/english_page/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    }
-
-.main--flex-german::before{
+.main--flex-english::before{
     content: ''url(../img/feathers/feaser.png);
     position: absolute;
     top: -100px;
@@ -27,11 +16,11 @@
 }
 
 
-.background_german{
+.background_english{
 max-width: 1440px;
 text-align: center;
 padding: 400px;
-background-image: url(../img/german_page/main.png);
+background-image: url(../img/english_page/main.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -48,7 +37,7 @@ h1{
     color: #012964;
     font-weight: bold;
 }
-.main--flex-german{
+.main--flex-english{
     position: relative;
     display: inline-block;
     margin:170px  100px;
@@ -72,7 +61,7 @@ h3{
     /* text-transform: uppercase; */
 }
 
-.text-german{ 
+.text-english{ 
     justify-content: start;
     font-weight: 400;
     font-size: 20px;
@@ -83,18 +72,18 @@ h3{
    
 } 
 
-.line_german_black{
+.line_english_black{
     height: 3px;
     width: 100%;
     background-color: rgba(28, 24, 1, 0.65);
 }
 
-.line_german_red{
+.line_english_red{
     height: 3px;
     width: 100%;
     background-color: rgba(227, 4, 4, 0.65);
 }
-.line_german_yellou{
+.line_english_yellou{
     height: 3px;
     width: 100%;
     background-color: rgba(246, 210, 6, 0.65);
@@ -116,7 +105,7 @@ h3{
         position: relative;
     }
 
-    .title-slider-german{
+    .title-slider-english{
         text-align: center;
         margin-top: 130px;
         margin-bottom: 50px;
