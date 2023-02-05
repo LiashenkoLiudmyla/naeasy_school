@@ -10,6 +10,9 @@ body{
 .modal-info{
     display: none;
 }
+.language-section_adapt{
+    display: none;
+}
 
 /*burger menu*/
 /*палички*/
@@ -41,6 +44,7 @@ body{
 }
 .naseasy-logo{
     max-width: 95px;
+    margin: 15px;
 }
 .main--flex::before{
     content: ''url(../img/feathers/feaser.png);
@@ -156,6 +160,7 @@ h1{
     color: #012964;
     font-weight: 500px;
     font-size: 50px;
+    text-transform: uppercase;
 }
 
 
@@ -165,12 +170,9 @@ h1{
     background-image: url(../img/background/backgraund1_1.png);
     background-size: cover;
     background-position: center  center;
-
-}
-
-.main{
     margin: 0 auto;  
  }
+
 
  .main-info{
     position: absolute;
@@ -791,7 +793,7 @@ max-width: 100%;
 
 
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 700px){
     .container{
         /* max-width: 550px; */
         
@@ -808,7 +810,7 @@ max-width: 100%;
         max-width: 100%;
         position: static;
         height: 200px;
-        padding-top: 50px;
+        
     }
     
      .h1-adapt_765{
@@ -831,6 +833,24 @@ max-width: 100%;
      .products-flex-column::after, .footer_logo::after, .main--flex::after{
         display: none;
      }
+     .grid_section-products {
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        
+    }
+    .grid_products-text{
+        font-size: 20px;
+        font-weight: 400px;
+        padding: 5px;
+        color: #182e63;
+    }
+    .title-language{
+        text-align: center;
+        margin: o auto;
+        max-width: 300px;
+    }
+
 
   
 
@@ -957,9 +977,74 @@ max-width: 100%;
     .header_link{
         font-size: 22px;
     }
-    
-    
 
+    .language-section{
+        display: none;
+    }
+    .language-section_adapt{
+        display: block;   
+    }
+    
+    .language-button, .title-languege-button{
+        flex-direction: column;    
+        text-align: center;
+        margin: 0 auto;
+    }
+    .button-lang{
+        background-color: rgb(45, 95, 156);
+        border: none;
+        border-radius: 50px;
+        width: 200px;
+        height: 50px;
+        font-size: 16x; 
+        margin: 10px;
+    }
+    .button-lang:hover{
+        cursor: pointer;
+        transition: 500ms;
+        font-size: 15px;
+        -webkit-box-shadow: 0px 0px 10px 0px #8e8f92;
+        -moz-box-shadow: 0px 0px 10px 0px #8e8f92;
+        box-shadow: 0px 0px 10px 0px #8e8f92;
+    }
+    .content-button{
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400px;
+        color: #f6f7fa;
+        text-decoration: none;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+       
+}
+
+@media screen and (max-width: 550px){
+    .container{
+         max-width: 310px;
+        
+    }
+    .main{
+        color: #182e63;
+    
+    }
+   
+    .h1-adapt_550{
+        display: none;
+     
+    }
+    .main--flex{
+       
+        height: 200px;
+    }
+    .main{
+        background-image: url(../img/logo_icon/naseasy.png);
+        max-width:350px;
+        margin: 5px auto;
+       
+    }
+    .naseasy-logo{
+        opacity: 0;
+    }
 
     
 }
