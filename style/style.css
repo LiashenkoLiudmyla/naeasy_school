@@ -16,18 +16,7 @@ body{
 
 /*burger menu*/
 /*палички*/
-
-.check{
-    width: 30px;
-    height: 3px;
-    background-color: #575445;
-    border-radius: 2px;
-    margin-bottom: 4px;
-}
-.check:not(:last-of-type){   /*вибираємо усі окрім останнього*/
-    margin-bottom: 4px;
-}
-.checkbox, .check-wrapper{
+.checkbox, .hambergerIcon{
     display: none;           /*виключили*/
 }
 
@@ -858,8 +847,9 @@ max-width: 100%;
         max-width: 764px;
     } */
 
-    .checkbox, .check-wrapper{
-        display: inline-block;    /* включили  */     
+    .checkbox, .hambergerIcon{
+        display: inline-block;    /* включили  */  
+       
     }
 
     
@@ -868,14 +858,15 @@ max-width: 100%;
 
    
     .hambergerIcon{ 
-        height: 3px; 
-        width:40px; 
+        height: 5px; 
+        width:50px; 
         position: absolute; 
+        /* top: 50%; 
+        left: 50%;  */
         border-radius: 50px; 
-        background-color: rgba(131, 152, 248, 0.5); 
+        background-color: #0e368e; 
         transform: translate(-50%,-50%) rotate(0deg); 
         transition: all ease 0.5s; 
-       
     } 
      
     .hambergerIcon::before, .hambergerIcon::after{ 
@@ -885,17 +876,17 @@ max-width: 100%;
         border-radius: inherit; 
         background-color: inherit; 
         margin: auto; 
-        width:50%; 
+        width: 50%; 
         transition: all ease 0.5s; 
     } 
      
     .hambergerIcon::before{ 
-         top: -12px; /* ширина між палочками*/
-        left:0; 
+        top: -15px; 
+        left: 0; 
         transform-origin: left; 
     } 
     .hambergerIcon::after{ 
-        bottom:-12px; /* ширина між палочками*/
+        bottom:-15px; 
         right: 0; 
         transform-origin: right; 
     } 
@@ -910,11 +901,6 @@ max-width: 100%;
         bottom:0; 
         transform: translateX(-100%) rotate(-90deg); 
     }
-
-
-
-    /*burg menu*/
-
     .header_link {
         font-size: 22px;
         line-height: 55px;
@@ -927,9 +913,6 @@ max-width: 100%;
         transition: all 1s;
     }
  
-    .checkbox{
-        display: block;     
-    }
     
     .menu{
         position: relative; 
@@ -937,12 +920,12 @@ max-width: 100%;
     }
     
     .checkbox{
-        position: absolute;  
+        display: block;
         width: 30px;
         height: 30px;
         margin: 0;
-        top: 0;
-        right: 0;
+        bottom: 0;
+        right: 10px;
         opacity: 0; 
         z-index: 5; 
     }
@@ -964,11 +947,9 @@ max-width: 100%;
         left: 0;
     }
 
-    
-    
     .header_li:not(:last-of-type){
     margin-right: 0; 
-} 
+    } 
     
     .header_li{
         margin-right: 0;  
