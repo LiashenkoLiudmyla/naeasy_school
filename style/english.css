@@ -1,4 +1,6 @@
-
+.main{
+    display: none;
+}
 .main--flex-english::before{
     content: ''url(../img/feathers/feaser.png);
     position: absolute;
@@ -72,22 +74,6 @@ h3{
    
 } 
 
-.line_english_black{
-    height: 3px;
-    width: 100%;
-    background-color: rgba(28, 24, 1, 0.65);
-}
-
-.line_english_red{
-    height: 3px;
-    width: 100%;
-    background-color: rgba(227, 4, 4, 0.65);
-}
-.line_english_yellou{
-    height: 3px;
-    width: 100%;
-    background-color: rgba(246, 210, 6, 0.65);
-}
 
 
 
@@ -110,6 +96,224 @@ h3{
         margin-top: 130px;
         margin-bottom: 50px;
     }
+
+
+     /* Адаптивність на
+
+1440рх----1140рх
+1200рх
+1090рх----750рх
+800рх
+550рх
+480рх----310рх
+360рх
+320рх */
+
+@media screen and (max-width: 800px){
+    .container{
+        max-width: 700px;
+        
+    }
+    .naseasy-logo{
+        display: inline-block;
+        max-width: 35%;
+        margin: 15px;
+    }
+
+    .reviews-adapt, .portfolio-list{
+
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0 auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    .footer_pos_feathers{
+        max-width: 350px;
+    }
+
+
+  /* burger menu */
+    .checkbox, .hambergerIcon{
+        display: inline-block;    /* включили  */  
+       
+    }
+   
+    
+    /*палички*/
+
+   
+    .hambergerIcon{ 
+        height: 5px; 
+        width:50px; 
+        position: absolute; 
+        /* top: 50%; 
+        left: 50%;  */
+        border-radius: 50px; 
+        background-color: #0e368e; 
+        transform: translate(-50%,-50%) rotate(0deg); 
+        transition: all ease 0.5s; 
+    } 
+     
+    .hambergerIcon::before, .hambergerIcon::after{ 
+        content:""; 
+        position: absolute; 
+        height: inherit; 
+        border-radius: inherit; 
+        background-color: inherit; 
+        margin: auto; 
+        width: 50%; 
+        transition: all ease 0.5s; 
+    } 
+     
+    .hambergerIcon::before{ 
+        top: -15px; 
+        left: 0; 
+        transform-origin: left; 
+    } 
+    .hambergerIcon::after{ 
+        bottom:-15px; 
+        right: 0; 
+        transform-origin: right; 
+    } 
+    .open{ 
+        transform:translate(-50%,-50%) rotate(135deg); 
+    } 
+    .open::before{ 
+        top:0; 
+        transform: translateX(100%) rotate(-90deg); 
+    } 
+    .open::after{ 
+        bottom:0; 
+        transform: translateX(-100%) rotate(-90deg); 
+    }
+    .header_link {
+        font-size: 22px;
+        line-height: 55px;
+        margin-top: 55px;
+        transition: all 1s;
+    }
+     
+    .header_link:hover{
+        color: rgba(248,216,207,.8);
+        transition: all 1s;
+    }
+ 
+    
+    .menu{
+        position: relative; 
+                             
+    }
+    
+    .checkbox{
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        bottom: 0;
+        right: 10px;
+        opacity: 0; 
+        z-index: 5; 
+    }
+    .flex_menu{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(111, 146, 198, 0.95);
+        transition: all 1s;
+        z-index: 2; 
+    }
+    .flex_menu--activ{
+        left: 0;
+    }
+
+    .header_li:not(:last-of-type){
+    margin-right: 0; 
+    } 
+    
+    .header_li{
+        margin-right: 0;  
+        margin: 10px 0; 
+    }
+    .header_link{
+        font-size: 22px;
+    }
+    .background_english{
+       display: none;
+        
+        }
+        .slider-img, .main::after,  .main--flex-english::before, .products-flex-column::before, .footer_logo::before, .main--flex::before{
+            display: none;
+         }
+         .products-flex-column::after, .footer_logo::after, .main--flex::after{
+            display: none;
+         }
+
+    
+   
+    }
+
+
+
+
+
+
+    @media screen and (max-width: 700px){
+        .container{
+             max-width: 550px;
+            
+        }
+        .line_german_black{
+            display: none;
+        }
+        
+        .line_german_red{
+            display: none;
+        }
+        .line_german_yellou{
+            display: none;
+        }
+        .container-adapt{
+            display: none;
+        }
+        
+        
+        
+        .footer-img{
+            display: none;
+         }
+    
+         .footer_logo::before{
+            display: none;
+         }
+         .footer_logo::after{
+            display: none;
+         }
+
+         .background_german{
+            display: none;
+             
+             }
+        }
+
+
+
+        @media screen and (max-width: 550px){
+            .container{
+                 max-width: 310px;
+                
+            }
+            .naseasy-logo{
+                opacity: 1;
+            }
+            
+        }
    
     
 

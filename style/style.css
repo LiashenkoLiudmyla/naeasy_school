@@ -107,35 +107,6 @@ color: red;
 }
 
 
-/* section main */
-
-
-
-
-
-/* delete */
-/* .main--flex{
-    position: relative;
-    display: inline-block;
-    font-size: 48px;
-    line-height: 58px;
-}
-.main-info{
- position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 22%; Регулируем это значение, чтобы перемещать позиционированный div вверх и вниз */
-    /* text-align: center;
-    width: 30%;  */
-    /* Устанавливаем ширину позиционируемого div */
-/* } */
-
-/* .background-adapt_1090{
-    display: none;
-} */
-
-/* delete */
 
 .main{
     
@@ -787,6 +758,11 @@ max-width: 100%;
         /* max-width: 550px; */
         
     }
+    .naseasy-logo{
+        display: inline-block;
+        max-width: 35%;
+        margin: 15px;
+    }
     .main{
         position: relative;
         height: 100%;
@@ -845,10 +821,6 @@ max-width: 100%;
     }  
 
   
-
-    /* .background-adapt_765{
-        max-width: 764px;
-    } */
 
     .checkbox, .hambergerIcon{
         display: inline-block;    /* включили  */  
