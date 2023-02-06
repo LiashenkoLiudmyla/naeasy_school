@@ -9,14 +9,14 @@
 
 
 
-.bx-wrapper .bx-pager.bx-default-pager a {
+.bx-wrapper .bx-pager .bx-default-pager a {
     background: rgba(43, 41, 45, 0.25);
     width: 12px;
     height: 12px;
     border-radius: 50%;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+ .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: rgb(3, 208, 249);
 };
 

@@ -30,7 +30,7 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-   max-height: 700px; 
+  
   
 }
 
@@ -104,8 +104,8 @@ color: red;
   /*FOOTER*/
 
 footer{
-   min-height: 500px;
-    background: rgb(45, 95, 156);
+  width: 100%;
+  background: rgb(45, 95, 156);
 }
 .footer-flex{
     flex-direction: column;
@@ -142,7 +142,7 @@ footer{
 
 .footer_pos_feathers{
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 270px;
 
 }
 
