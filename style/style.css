@@ -206,7 +206,7 @@ h2{
     position: relative;
     padding: 45px 0;
 }  
-.prodacts_info{
+.products_info{
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
@@ -286,7 +286,7 @@ h2{
     display: none; /*для того щоб модалка не зявлялася 
    сама по собі а лише у випадку нажаття на кнопку*/
    position: fixed;
-   background-color: rgba(0, 0, 0, 0.3);
+   background-color: rgba(3, 52, 99, 0.9);
    top: 0;
    left: 0;
    right: 0;
@@ -300,7 +300,7 @@ h2{
    opacity: 1;
    padding: 30px 30px 10px 30px;
    box-sizing: border-box;  /*щоб збараглися пропорції нашого боксу*/
-   border-radius: 10px;
+   border-radius: 50px 0 50px 0;
    position: absolute;
    top: 50%;
    left: 50%;
@@ -572,7 +572,7 @@ h2{
      display: none; /*для того щоб модалка не зявлялася 
     сама по собі а лише у випадку нажаття на кнопку*/
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(3, 52, 99, 0.9);
     top: 0;
     left: 0;
     right: 0;
@@ -820,7 +820,51 @@ max-width: 100%;
         
     }  
 
-  
+
+
+
+
+    .modal-info, .modal-info-general, .modal-info-course_for_children, .modal-info-zno, .modal-info-big_science, .modal-info-business, .modal-info-adults{
+        display: none; /*для того щоб модалка не зявлялася 
+       сама по собі а лише у випадку нажаття на кнопку*/
+       position: fixed;
+       background-color: rgba(3, 52, 99, 0.9);
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 99;
+      }
+    .modal-info__modal{
+       width: 100%;
+       /* text-align: center; */
+       background-color: rgb(3, 52, 99);
+       color: #cdcccc;
+       opacity: 1;
+       padding: 30px 30px 10px 30px;
+       box-sizing: border-box;  /*щоб збараглися пропорції нашого боксу*/
+       border-radius: 50px 0 50px 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       }
+       .modal-info__text{
+        font-size: 19px;
+        text-align: left;
+        padding-bottom: 30px;
+       }
+      .close{
+           position: absolute;
+           top: 10px;
+           right: 30px;
+           cursor: pointer;
+       }
+
+
+
+
+
 
     .checkbox, .hambergerIcon{
         display: inline-block;    /* включили  */  
