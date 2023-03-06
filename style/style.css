@@ -121,6 +121,7 @@ h1{
     font-weight: 500px;
     font-size: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -137,12 +138,11 @@ h1{
  .main-info{
     position: absolute;
     margin: 0 auto;
-    left: 22%;
+    left: 50%;
+    transform: translate(-50%,0);
     
     bottom: 22%; /* Регулируем это значение, чтобы перемещать позиционированный div вверх и вниз */
-     
-    width: 50%; /* Устанавливаем ширину позиционируемого div */
-       
+        
    }
 
 
@@ -702,7 +702,17 @@ footer{
 360рх
 320рх */
 
+@media screen and (max-width: 1300px){
+    h1{
+        font-family: 'Forum', cursive;
+        color: #012964;
+        font-weight: 500px;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+    }
 
+}
 
 @media screen and (max-width: 1090px){
 
@@ -738,8 +748,8 @@ max-width: 100%;
     .main-info{
         position: absolute;
            margin: 0 auto;
-           left: 0;
-           right: 0;
+           left: 50%;
+    transform: translate(-50%,0);
            bottom: 22%; /* Регулируем это значение, чтобы перемещать позиционированный div вверх и вниз */
            text-align: center;
            width: 50%; /* Устанавливаем ширину позиционируемого div */
