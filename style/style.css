@@ -702,7 +702,7 @@ footer{
 360рх
 320рх */
 
-@media screen and (max-width: 1300px){
+/* @media screen and (max-width: 1300px){
     h1{
         font-family: 'Forum', cursive;
         color: #012964;
@@ -712,7 +712,7 @@ footer{
         text-align: center;
     }
 
-}
+} */
 
 @media screen and (max-width: 1090px){
 
