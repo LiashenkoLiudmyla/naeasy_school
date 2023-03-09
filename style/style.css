@@ -785,12 +785,10 @@ max-width: 100%;
         
     }
     
-     /* .h1-adapt_765{
-        color: #182e63;
-        display: inline-block;
-        text-align: center;
-        margin: 0 auto;
-    }  */
+    h1{
+        display: none;
+     
+    }
     .main--flex::before{
         display: none;
     }
